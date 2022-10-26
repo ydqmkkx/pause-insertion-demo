@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
+  <title>Duration-Aware Pause Insertion Using Pre-Trained Language Model for Multi-Speaker Text-to-Speech</title>
+  <style>
+    audio {
+      width: 250px;
+      }
+  </style>
+  </head>
+
+<body>
+<font size='4', face="Arial"><h1><center>Duration-Aware Pause Insertion Using Pre-Trained Language Model for Multi-Speaker Text-to-Speech</center></h1></font>
+<font size='4', face="Arial"><center><b>Authors:</b> Dong Yang, Tomoki Koriyama, Yuki Saito, Takaaki Saeki, Detai Xin, Hiroshi Saruwatari</center></font>
+
+<br></br>
+<hr/>
+
+<p></p>
+
+<font size='4', face="Arial"><h2>1. Short utterance</h2></font>
+<p><font size='4', face="Arial">These utterances are not used in our subjective evaluations.</font></p>
+<table>
+  <tbody>
+    <tr>
+      <th><font size='4', face="Arial"><b>FastSpeech2</b></font></th>
+      <th><font size='4', face="Arial"><b>CPI</b></font></th>
+    </tr>
+    <tr><td colspan="2"><span><font size='4', face="Arial">1. (speaker id: 783, female speaker) Opposite the printed words "pay to" were written</font></span></td></tr>
+    <tr><td colspan="2"><span><font size='4', face="Arial"> the words "kleins sporting goods."</font></span></td></tr>
+    <tr>
+      <td><audio controls="controls"><source src="audio/783_short_raw.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/783_short_CPI.wav"></audio></td>
+    </tr>
+    <tr><td colspan="2"><span><font size='4', face="Arial">2. (speaker id: 1182, male speaker) Foreign witnesses, too, were in favor of publicity.</font></span></td></tr>
+    <tr>
+      <td><audio controls="controls"><source src="audio/1182_short_raw.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/1182_short_CPI.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+<p></p>
+
+<font size='4', face="Arial"><h2>2. Long-form utterance</h2></font>
+<p><font size='4', face="Arial">These utterances are used in our subjective evaluations.</font></p>
+<table>
+  <tbody>
+    <tr>
+      <th><font size='4', face="Arial"><b>FastSpeech2</b></font></th>
+      <th><font size='4', face="Arial"><b>Baseline</b></font></th>
+      <th><font size='4', face="Arial"><b>RPI</b></font></th>
+      <th><font size='4', face="Arial"><b>CPI</b></font></th>
+      <th><font size='4', face="Arial"><b>CPI (Position)</b></font></th>
+      <th><font size='4', face="Arial"><b>RPI*</b></font></th>
+      <th><font size='4', face="Arial"><b>CPI*</b></font></th>
+    </tr>
+    <tr><td colspan="4"><span><font size='4', face="Arial">1. (speaker id: 637, male speaker) If the congress wishes to be the voice of the revolutionary democracy it must not sit with folded hands before the developing civil war, the result of which may be a dangerous outburst of counter revolution. The possibility of a peaceful outcome lies in the formation of a united democratic authority.</font></span></td></tr>
+    <tr>
+      <td><audio controls="controls"><source src="audio/637_84_raw.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/637_84_lstmp.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/637_84_res.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/637_84_class.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/637_84_position.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/637_84_resspeaker.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/637_84_classspeaker.wav"></audio></td>
+    </tr>
+    <tr><td colspan="4"><span><font size='4', face="Arial">2. (speaker id: 770, male speaker) Love with the shield of the broken heart ever his bow doth bend, with a single shaft for a single prize, and the ultimate bolt that parts and flies comes with a thunder of split skies, and a sound of souls that rend.</font></span></td></tr>
+    <tr>
+      <td><audio controls="controls"><source src="audio/770_25_raw.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/770_25_lstmp.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/770_25_res.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/770_25_class.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/770_25_position.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/770_25_resspeaker.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/770_25_classspeaker.wav"></audio></td>
+    </tr>
+    <tr><td colspan="4"><span><font size='4', face="Arial">3. (speaker id: 1779, female speaker) Early on the following day the whole town was on its feet, and everyone wondered how and where the stranger would build the wonderful palace. The princess alone was silent and sorrowful, and had cried all night till her pillow was wet, so much did she take the fate of the beautiful youth to heart.</font></span></td></tr>
+    <tr>
+      <td><audio controls="controls"><source src="audio/1779_11_raw.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/1779_11_lstmp.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/1779_11_res.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/1779_11_class.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/1779_11_position.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/1779_11_resspeaker.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/1779_11_classspeaker.wav"></audio></td>
+    </tr>
+    <tr><td colspan="4"><span><font size='4', face="Arial">4. (speaker id: 2004, female speaker) It is heart racking to struggle day by day, amid incessant interruption and melee, to snatch out of the hurly burly some shreds of humour or pathos or (dare one say?) beauty, and phrase them intelligibly.</font></span></td></tr>
+    <tr>
+      <td><audio controls="controls"><source src="audio/2004_92_raw.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/2004_92_lstmp.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/2004_92_res.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/2004_92_class.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/2004_92_position.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/2004_92_resspeaker.wav"></audio></td>
+      <td><audio controls="controls"><source src="audio/2004_92_classspeaker.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
